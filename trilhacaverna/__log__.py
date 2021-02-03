@@ -1,19 +1,5 @@
 
-{'date': 'Thu Oct 25 2018 11:50:53.479 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
-'error': '''
- module <string> line 29
-  if __name__ == "__main__"
-                            ^
-SyntaxError: invalid syntax
-'''},
-{'date': 'Thu Oct 25 2018 11:52:53.645 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
-'error': '''
- module <string> line 35
-  self.jogador = Jogador()
-  ^
-IndentationError: expected an indented block
-'''},
-{'date': 'Thu Oct 25 2018 11:54:01.563 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+{'date': 'Tue Oct 15 2019 09:48:51.952 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -25,11 +11,57 @@ IndentationError: expected an indented block
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 2
-    from ruzwana.main import Turno
-  module ruzwana.main line 2
-    from ruzwana.main import Perigo
-ImportError: cannot import name 'Perigo'
+  module <module> line 6
+    trilhacaverna.vai()
+NameError: name 'trilhacaverna' is not defined
+'''},
+{'date': 'Tue Oct 15 2019 09:52:03.392 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 6
+    trilhacaverna = Elemento(TRILHACAVERNA, cena=trilhacaverna, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
+NameError: name 'trilhacaverna' is not defined
+'''},
+{'date': 'Tue Oct 15 2019 09:56:57.243 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 6
+    trilhacaverna = Elemento(TRILHACAVERNA, cena=trilhacaverna, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
+NameError: name 'trilhacaverna' is not defined
+'''},
+{'date': 'Tue Oct 15 2019 12:57:35.343 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 5
+    from cavernatesouro.main import cavernatesouro
+ImportError: cannot import name 'cavernatesouro'
 
 ImportError
 Traceback (most recent call last):
@@ -43,12 +75,10 @@ Traceback (most recent call last):
     action()
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 2
-    from ruzwana.main import Turno
-  module ruzwana.main line 2
-    from ruzwana.main import Perigo
+  module <module> line 5
+    from cavernatesouro.main import cavernatesouro
 '''},
-{'date': 'Thu Oct 25 2018 11:56:50.103 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+{'date': 'Tue Oct 15 2019 12:59:39.465 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -60,27 +90,9 @@ Traceback (most recent call last):
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 2
-    from ruzwana.main import Turno
-ImportError: cannot import name 'Turno'
-'''},
-{'date': 'Thu Oct 25 2018 11:58:31.739 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 7
-    from kathryn.main import Baralho
-  module kathryn.main line 7
-    from kathryn.main import Baralho
-ImportError: cannot import name 'Baralho'
+  module <module> line 5
+    from cavernatesouro.main import cavernatesouro
+ImportError: cannot import name 'cavernatesouro'
 
 ImportError
 Traceback (most recent call last):
@@ -94,12 +106,10 @@ Traceback (most recent call last):
     action()
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 7
-    from kathryn.main import Baralho
-  module kathryn.main line 7
-    from kathryn.main import Baralho
+  module <module> line 5
+    from cavernatesouro.main import cavernatesouro
 '''},
-{'date': 'Thu Oct 25 2018 12:00:46.719 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+{'date': 'Tue Oct 15 2019 14:33:11.719 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -111,13 +121,99 @@ Traceback (most recent call last):
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 29
-    baralho = Baralho()
+  module <module> line 6
+    from cavernaamigo.main import cavernaamigo
+  module cavernaamigo.main line 29
+    esmeralda.entra(cavrnaamigo)
+NameError: name 'cavrnaamigo' is not defined
+'''},
+{'date': 'Tue Oct 15 2019 14:35:28.551 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 6
+    from cavernaamigo.main import cavernaamigo
+  module cavernaamigo.main line 29
+    esmeralda.entra(cavrnaamigo)
+NameError: name 'cavrnaamigo' is not defined
+'''},
+{'date': 'Tue Oct 15 2019 14:36:48.770 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 21
+    setaesquerda.vai = cavernaamigo.vai
+NameError: name 'cavernaamigo' is not defined
+'''},
+{'date': 'Tue Oct 15 2019 14:39:41.367 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
   module <module> line 20
-    self.perigo = Perigo()
-TypeError: 'module' object is not callable
+    setadireita.vai = cavernatesouro.vai
+NameError: name 'cavernatesouro' is not defined
 '''},
-{'date': 'Thu Oct 25 2018 21:32:26.666 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Tue Oct 15 2019 14:40:49.583 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 6
+    from cavernaamigo.main import cavernaamigo
+  module cavernaamigo.main line 29
+    esmeralda.entra(cavrnaamigo)
+NameError: name 'cavrnaamigo' is not defined
+'''},
+{'date': 'Tue Oct 15 2019 14:43:26.168 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 6
+    from cavernaamigo.main import cavernaamigo
+  module cavernaamigo.main line 29
+    esmeralda.entra(cavrnaamigo)
+NameError: name 'cavrnaamigo' is not defined
+'''},
+{'date': 'Thu Oct 17 2019 15:29:51.412 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -130,12 +226,8 @@ TypeError: 'module' object is not callable
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
   module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 3
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
+    from cavernatesouro.main import Caverna
+ImportError: cannot import name 'Caverna'
 
 ImportError
 Traceback (most recent call last):
@@ -150,236 +242,5 @@ Traceback (most recent call last):
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
   module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 3
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-'''},
-{'date': 'Thu Oct 25 2018 21:32:28.584 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
-'''},
-{'date': 'Sat Nov 03 2018 11:55:01.376 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
-
-ImportError
-Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 264
-    action()
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-'''},
-{'date': 'Sun Nov 03 2019 19:09:58.714 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
-
-ImportError
-Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 264
-    action()
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-'''},
-{'date': 'Sun Nov 03 2019 19:10:03.868 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
-'''},
-{'date': 'Sun Nov 17 2019 22:44:40.185 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
-
-ImportError
-Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 264
-    action()
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-'''},
-{'date': 'Sun Nov 17 2019 22:49:02.953 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
-
-ImportError
-Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 264
-    action()
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-'''},
-{'date': 'Fri Jul 24 2020 12:19:34.377 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''Traceback (most recent call last):
-  module _core.main line 177
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
-ImportError: cannot import name 'Jogador'
-
-ImportError
-Traceback (most recent call last):
-  module _core.main line 177
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 264
-    action()
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-  module kathryn.main line 5
-    from natalia.main import Jogador
+    from cavernatesouro.main import Caverna
 '''},

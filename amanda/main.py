@@ -75,10 +75,10 @@ class FlorestaFaca:
         self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_leao)
         floresta_leao.aqui = self.floresta_inicio
         faca = Faca(self.floresta_inicio)
-        self.lanterna = Elemento (LANTERNA,tit="lanterna", cena = self.floresta_inicio, x=300, y=500, vai=self.guarda)
-        self.capa_de_chuva = Elemento (CAPA_DE_CHUVA, tit="capa de chuva", cena = self.floresta_inicio, x=200, y=300, vai=self.guardacapa)
-        self.corda = Elemento (CORDA, tit="corda", cena = self.floresta_inicio, x=850, y=350, vai=self.guardacorda)
-        self.antidoto = Elemento(ANTIDOTE, tit="antidoto", cena = self.floresta_inicio, x=700, y=480, w=80, vai=self.pegaant)
+        self.lanterna = Elemento (LANTERNA,tit="lanterna", drag=True, cena = self.floresta_inicio, x=300, y=500, vai=self.guarda)
+        self.capa_de_chuva = Elemento (CAPA_DE_CHUVA, tit="capa de chuva", drag=True, cena = self.floresta_inicio, x=200, y=300, vai=self.guardacapa)
+        self.corda = Elemento (CORDA, tit="corda", drag=True, cena = self.floresta_inicio, x=850, y=350, vai=self.guardacorda)
+        self.antidoto = Elemento(ANTIDOTE, tit="antidoto", drag=True, cena = self.floresta_inicio, x=700, y=480, w=80, vai=self.pegaant)
         
     def pegaant(self, _):
         INVENTARIO.bota(self.antidoto)

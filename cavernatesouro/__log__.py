@@ -1,5 +1,5 @@
 
-{'date': 'Thu Oct 25 2018 11:38:25.898 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+{'date': 'Tue Oct 15 2019 13:29:43.752 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -11,13 +11,11 @@
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 2
-    from lisa.main import Partida
-  module lisa.main line 19
-    if __lisa__ == "__main__":
-NameError: name '__lisa__' is not defined
+  module <module> line 9
+    codigo = Codigo ("alo", "um texto maior",cena = cavernaamigo, x= 600, y= 320, w= 200, h= 200)
+NameError: name 'cavernaamigo' is not defined
 '''},
-{'date': 'Thu Oct 25 2018 11:41:05.274 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+{'date': 'Tue Oct 15 2019 13:29:53.469 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -29,40 +27,11 @@ NameError: name '__lisa__' is not defined
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 22
-    universo = Universo()
-  module <module> line 15
-    self.partida = Partida()
-  module lisa.main line 15
-    self.rodada = Rodada() 
-TypeError: 'module' object is not callable
+  module <module> line 9
+    codigo = Codigo ("alo", "um texto maior",cena = cavernaamigo, x= 600, y= 320, w= 200, h= 200)
+NameError: name 'cavernaamigo' is not defined
 '''},
-{'date': 'Thu Oct 25 2018 11:59:56.560 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
-'error': '''Partida __init__
-Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 278
-    traceback.print_exc(file=sys.stderr)
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 22
-    universo = Universo()
-  module <module> line 15
-    self.partida = Partida()
-  module lisa.main line 16
-    self.rodada = Rodada() 
-  module kathryn.main line 44
-    self.baralho = Baralho()
-  module kathryn.main line 20
-    self.perigo = Perigo()
-TypeError: 'module' object is not callable
-'''},
-{'date': 'Sun Oct 06 2019 19:59:24.810 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Tue Oct 15 2019 13:32:04.28 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -74,34 +43,46 @@ TypeError: 'module' object is not callable
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 2
-    from lisa.main import Partida
-  module lisa.main line 2
-    from kathryn.main import Rodada 
-  module kathryn.main line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
-ImportError: cannot import name 'Rodada'
-
-ImportError
-Traceback (most recent call last):
+  module <module> line 9
+    codigo = Codigo ("alo", "um texto maior",cena = cavernatesouro, x= 600, y= 320, w= 200, h= 200)
+TypeError: __init__() got an unexpected keyword argument 'x'
+'''},
+{'date': 'Tue Oct 15 2019 13:35:37.890 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  codigo = Texto (cena = cavernatesouro, "alo", "um texto maior",style = dict( x= 400, y= 300))
+                                              ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
+{'date': 'Thu Oct 17 2019 15:37:26.855 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
   module _core.supygirls_factory line 135
     self.act(self, lambda *_: self.hide() or extra()) if self.act else None
   module _core.supygirls_factory line 306
     return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 264
-    action()
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 2
-    from lisa.main import Partida
-  module lisa.main line 2
-    from kathryn.main import Rodada 
-  module kathryn.main line 5
-    from natalia.main import Jogador
-  module natalia.main line 2
-    from kathryn.main import Rodada
+  module <module> line 24
+    Tesouro.vai()
+TypeError: vai missing 1 positional argument: 'self'
+'''},
+{'date': 'Thu Oct 17 2019 15:40:47.623 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 24
+    Tesouro.vai()
+TypeError: vai missing 1 positional argument: 'self'
 '''},

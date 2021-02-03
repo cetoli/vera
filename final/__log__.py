@@ -1,19 +1,5 @@
 
-{'date': 'Thu Jun 27 2019 11:34:54.69 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''
- module <string> line 21
-  redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=30, y=70, w=100
-                       ^
-SyntaxError: Unbalanced bracket (
-'''},
-{'date': 'Thu Jun 27 2019 11:46:30.928 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
-'error': '''
- module <string> line 23
-  tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity"=0.2})
-                                                                                       ^
-SyntaxError: invalid syntax
-'''},
-{'date': 'Thu Jun 27 2019 11:48:50.83 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Thu Oct 10 2019 11:50:38.543 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -25,11 +11,13 @@ SyntaxError: invalid syntax
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 23
-    tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=tub)
-NameError: name 'tub' is not defined
+  module <module> line 67
+    a_floresta = FlorestaFinal()
+  module <module> line 56
+    self.macaca_mae = Macaca()
+TypeError: __init__() missing 1 positional argument: aqui
 '''},
-{'date': 'Thu Jun 27 2019 11:54:58.93 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Thu Oct 10 2019 11:51:02.563 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -41,11 +29,13 @@ NameError: name 'tub' is not defined
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 29
-    ilhamar = Perigo().ilhamar
-AttributeError: 'Perigo' object has no attribute 'ilhamar'
+  module <module> line 67
+    a_floresta = FlorestaFinal()
+  module <module> line 57
+    esquerda = esquerda or floresta_rio
+NameError: name 'floresta_rio' is not defined
 '''},
-{'date': 'Thu Oct 17 2019 12:02:55.803 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Thu Oct 10 2019 11:51:18.879 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -57,26 +47,13 @@ AttributeError: 'Perigo' object has no attribute 'ilhamar'
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 6
-    from fundodomar.main import cavernatesourofundodomar
-ImportError: cannot import name 'cavernatesourofundodomar'
-
-ImportError
-Traceback (most recent call last):
-  module _core.main line 160
-    dialog.action(lambda *_: self.start()
-  module _core.supygirls_factory line 135
-    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
-  module _core.supygirls_factory line 306
-    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
-  module _core.supygirls_factory line 264
-    action()
-  module _core.supygirls_factory line 295
-    exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 6
-    from fundodomar.main import cavernatesourofundodomar
+  module <module> line 67
+    a_floresta = FlorestaFinal()
+  module <module> line 60
+    floresta_rio.aqui = self.floresta_inicio 
+NameError: name 'floresta_rio' is not defined
 '''},
-{'date': 'Thu Oct 17 2019 14:35:35.643 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Thu Oct 17 2019 11:49:10.146 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -88,11 +65,13 @@ Traceback (most recent call last):
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 33
-    Perigo().vai()
-TypeError: vai() missing 1 positional argument: _
+  module <module> line 67
+    a_floresta = FlorestaFinal()
+  module <module> line 57
+    esquerda = esquerda or floresta_rio
+NameError: name 'floresta_rio' is not defined
 '''},
-{'date': 'Thu Oct 17 2019 14:55:00.282 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Thu Oct 17 2019 11:49:40.610 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -104,11 +83,13 @@ TypeError: vai() missing 1 positional argument: _
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 36
-    Perigo().vai()
-TypeError: vai() missing 1 positional argument: _
+  module <module> line 67
+    a_floresta = FlorestaFinal()
+  module <module> line 57
+    esquerda = esquerda or floresta_inicio
+NameError: name 'floresta_inicio' is not defined
 '''},
-{'date': 'Thu Oct 17 2019 14:55:05.208 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+{'date': 'Thu Oct 17 2019 11:50:28.333 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': '''Traceback (most recent call last):
   module _core.main line 160
     dialog.action(lambda *_: self.start()
@@ -120,7 +101,9 @@ TypeError: vai() missing 1 positional argument: _
     traceback.print_exc(file=sys.stderr)
   module _core.supygirls_factory line 295
     exec(self.code, glob)  # dict(__name__="__main__"))
-  module <module> line 36
-    Perigo().vai()
-TypeError: vai() missing 1 positional argument: _
+  module <module> line 67
+    a_floresta = FlorestaFinal()
+  module <module> line 60
+    floresta_rio.aqui = self.floresta_inicio 
+NameError: name 'floresta_rio' is not defined
 '''},

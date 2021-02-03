@@ -1,8 +1,9 @@
 # vera.morgan.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
+from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO, STYLE
 # from morgan.main import FlorestaBanana
 from elemento.main import Elemento as Elem
+STYLE["width"], STYLE["height"] = 1400, "650px"
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_LEAO= "O leão está com fome, tome cuidado ele pode comer você!"
@@ -12,15 +13,27 @@ MORDIDA = "https://i.imgur.com/EOHbtUB.png"
 
 
 
+class CenaProxyCobra:
+    def __init__(self, aqui=None):
+        self.aqui = aqui
+        self.floresta_macaco = None
+    def vai(self, *_):
+        from cobra.main import FlorestaCobra
+        self.floresta_cobra = FlorestaCobra()
+        #self.aqui.esquerda = self.aqui.meio = self.aqui.direita = self.aqui.mordida.vai = self.floresta_macaco
+        self.floresta_cobra.vai()
+
+
+
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
-        self.floresta_banana = None
-    def vai(self):
-        from cobra.main import FlorestaBanana
-        self.floresta_banana = FlorestaBanana()
-        self.floresta_banana.esquerda = self.aqui
-        self.floresta_banana.vai()
+        self.floresta_macaco = None
+    def vai(self, *_):
+        from soraya.main import FlorestaMacaco
+        self.floresta_macaco = FlorestaMacaco(vida=2)
+        #self.aqui.esquerda = self.aqui.meio = self.aqui.direita = self.aqui.mordida.vai = self.floresta_macaco
+        self.floresta_macaco.vai()
 
 FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
 LEAO = "https://i.imgur.com/4gXpvfQ.png"
@@ -31,7 +44,8 @@ class Leao:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_LEAO)
         self.falou = Texto(self.floresta_inicio, LEAO_COME)
-        self.leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
+        #self.leao = Elemento(LEAO, style=dict(left="150px",width="200px", top="480px"), vai=self.pega)
+        self.leao = Elemento(LEAO, x=150, y=400, w=200, h=200, vai=self.pega)
         self.morreu = Cena()
         self.comeu = False
         self.leao.entra(self.floresta_inicio)
@@ -47,6 +61,7 @@ class Leao:
         
     def falaleaocome(self,_):
         self.mordida.entra(self.floresta_inicio)
+        self.mordida.vai = CenaProxy(self.floresta_inicio).vai
         self.falou.vai()
         
     def pega(self, _): 
@@ -64,7 +79,7 @@ class Leao:
 class FlorestaLeao:
     def __init__(self, esquerda=None):
         self.floresta_inicio = None
-        floresta_banana = CenaProxy(self.floresta_inicio)
+        floresta_banana = CenaProxyCobra(self.floresta_inicio)
         esquerda = esquerda or floresta_banana
         self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_banana)
         leao = Leao(self.floresta_inicio)

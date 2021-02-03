@@ -2139,3 +2139,35 @@ SyntaxError: invalid syntax
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Oct 06 2019 20:00:31.343 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 30
+    main(gui=Gui()).inicia()
+  module <module> line 27
+    return Jogo(gui=gui, jogadores=[JogadorSimples(None, jogador) for jogador in jogadores])
+  module _spy.tesouro.tesouro line 353
+    self.mesa = Mesa(jogadores)
+  module _spy.tesouro.tesouro line 239
+    self.baralho = Baralho()
+  module _spy.tesouro.tesouro line 154
+    self.monta_baralho()
+  module _spy.tesouro.tesouro line 167
+    self.cartas.append(Perigo(face=perigo))
+  module _spy.tesouro.tesouro line 48
+    self.elt = Jogo.GUI.carta(face)
+  module _spy.tesouro.main line 165
+    return Sprite(**SPRITES["t{}".format(face) if face.isdigit() else face])
+  module _spy.tesouro.main line 86
+    self.img.style.marginLeft = "-{}px".format(index * w)
+AttributeError: 'str' object has no attribute 'style'
+'''},

@@ -286,3 +286,128 @@ TypeError: __init__() got an unexpected keyword argument 'width'
     self.terra = Elemento(TERRA, x=500, y=250, w=320, h=320, vai=self.pega)
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Tue Oct 15 2019 15:06:24.464 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 177
+    o_universo = Universo()
+  module <module> line 167
+    estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
+NameError: name 'ANIMAL' is not defined
+'''},
+{'date': 'Thu Oct 17 2019 10:21:02.966 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 186
+  self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left,-40 y=top +40, w=80, h=80, vai=self.pega, cena=u)
+                                                              ^
+SyntaxError: invalid syntax
+'''},
+{'date': 'Thu Oct 17 2019 10:58:09.666 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: $locals_$exec_6747.Menudeanimais is not a function>
+'''},
+{'date': 'Thu Oct 17 2019 10:58:45.361 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: $locals_$exec_6796.Menudeanimais is not a function>
+'''},
+{'date': 'Thu Oct 17 2019 11:00:24.671 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 164
+    o_universo = Universo()
+NameError: name 'Universo' is not defined
+'''},
+{'date': 'Thu Oct 17 2019 11:00:55.409 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 219
+    o_universo.vai()
+AttributeError: 'Universo' object has no attribute 'vai'
+'''},
+{'date': 'Thu Oct 17 2019 11:16:29.827 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 225
+    o_universo = Universo()
+  module <module> line 214
+    estacao3 = Estacao(self.universo, menuo, left=380, top=410, icone=OBJETO)
+  module <module> line 129
+    self.icone = Elemento(icone, style=dict(left=add(left,55),
+  module <module> line 121
+    return "{}px".format(int(valor[:-2]) + num)
+AttributeError: 'int' object has no attribute '__getitem__'
+'''},
+{'date': 'Thu Oct 17 2019 11:28:29.672 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 190
+  self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left +50 y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
+                                                              ^
+SyntaxError: invalid syntax
+'''},
+{'date': 'Thu Oct 17 2019 11:28:48.63 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 190
+  self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left -50 y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
+                                                              ^
+SyntaxError: invalid syntax
+'''},
+{'date': 'Fri Dec 04 2020 13:16:31.325 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 233
+    o_universo = Universo()
+  module <module> line 216
+    terra = Terra(self.universo)
+  module <module> line 73
+    self.terra = Elemento(TERRA, x=800, y=180, w=450, h=400, vai=self.pega)
+  module elemento.main line 18
+    self.img, self.title, self.dropper, self.alt = img, tit, drop, alt
+  module _spy.vitollino.main line 668
+    self.elt.style.backgroundImage = "url({})".format(value)
+AttributeError: 'Elemento' object has no attribute 'elt'
+'''},

@@ -12,7 +12,7 @@ class Perigo:
     def __init__(self):
         self.ilhamar =ilhamar = Cena(ILHAMAR)
         # praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
-        ilhamar.vai()
+        # ilhamar.vai()
         boia = Elemento(BOIA, cena=ilhamar, x=30, y=100, w=100)
         boia2 = Elemento(BOIA, cena=ilhamar, x=100, y=250, w=100)
         boia3 = Elemento(BOIA, cena=ilhamar, x=200, y=400, w=100)
@@ -21,10 +21,17 @@ class Perigo:
         boia7 = Elemento(BOIA, cena=ilhamar, x=700, y=200, w=100)
         boia8 = Elemento(BOIA, cena=ilhamar, x=900, y=300, w=100)
         boia9 = Elemento(BOIA, cena=ilhamar, x=1100, y=400, w=100)
-        redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=400, y=300, w=120, tipo="100% 30%")
+        redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=400, y=300, w=120, tipo="100% 30%",
+        vai=self.vai_fundo)
         self.tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=self.tub)
-    def tub(self, _):
+    def tub(self, *_):
         self.tubarao.elt.style.opacity = 1
         self.tubarao.elt.style.width = 180
-        
-ilhamar = Perigo().ilhamar
+    def vai(self, *_):
+        self.ilhamar.vai()
+    def vai_fundo(self, *_):
+        import fundodomar.main
+
+if __name__ == "__main__":
+    Perigo().vai()
+#ilhamar = Perigo().ilhamar
